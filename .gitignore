@@ -1,0 +1,36 @@
+# ---- 敏感配置：密钥与数据库密码绝不入库 ----
+.env
+.env.local
+*.env.bak
+
+# ---- 程序运行时生成 ----
+logs/
+deepseek_key_manager_settings.json
+keys_meta.json
+backups/
+
+# ---- 编译产物 ----
+build_output/
+*.dist/
+*.build/
+*.onefile-build/
+*.pyd
+*.so
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# ---- 脚手架中间产物 ----
+_scaffold/_smoke_out.txt
+_scaffold/shots/
+_scaffold/tmp/
+
+# ---- 编辑器 ----
+.vscode/
+.idea/
+*.swp
